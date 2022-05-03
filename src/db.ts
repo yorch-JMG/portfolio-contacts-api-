@@ -9,6 +9,7 @@ export const AppDataSource = new DataSource({
   password: DB_PW,
   host: DB_HOST,
   port: +DB_PORT!,
+  connectTimeout: 1000 * 60 * 60,
   synchronize: true,
   entities: [Contacts],
   ssl: false,
